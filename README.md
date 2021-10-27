@@ -1,3 +1,5 @@
-## About me
+# Personal website
 
-I'm Lorenzo D'Auria
+In this repository I've implemented my personal website.
+
+[Click here to visit it!](https://lodauria.github.io/index)
