@@ -1,5 +1,5 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-architect
 title: Lorenzo D'Auria - Homepage
 description: Here you can find some of my projects
 permalink: /:year/:month/:day/:title
-avatar: _src/logo.jpg
+logo: _src/logo.jpg
