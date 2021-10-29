@@ -1,3 +1,7 @@
+---
+permalink: /readme/
+---
+
 # Personal website
 
 In this repository I've implemented my personal website.
