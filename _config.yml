@@ -1,5 +1,4 @@
 theme: jekyll-theme-dinky
-title: Lorenzo D'Auria - Homepage
-description: Here you can find some of my projects
+title: Lorenzo D'Auria
+description: Welcome to my personal website, here you can find some of my projects
 permalink: /:year/:month/:day/:title
-logo: _src/logo.jpg
