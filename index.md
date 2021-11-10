@@ -1,6 +1,9 @@
 ---
 permalink: /
+title: "Lorenzo D'Auria Website"
 ---
+
+# [Work in progress]
 
 ## About me
 
