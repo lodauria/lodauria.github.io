@@ -1,4 +1,4 @@
-# Personal website
+# Personal WebSite
 
 In this repository I've implemented my personal website.
 
