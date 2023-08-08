@@ -12,23 +12,10 @@ function Sidebar() {
                 About me
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="/#/projects"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li className="nav-item">
+              <a className="nav-link" href="/#/projects">
                 Projects
               </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="/#/project1">
-                    Project 1
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#/contacts">
