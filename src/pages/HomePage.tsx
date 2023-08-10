@@ -1,19 +1,41 @@
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Col, Container, Row, Image, Button } from "react-bootstrap";
 
 function HomePage() {
   return (
     <Container>
-      <Row md={3} className="details-header">
-        <Col md={2}></Col>
-        <Col md={4}>
+      <Row md={3} className="row-header">
+        <Col md={6} className="col-image d-flex align-items-center">
           <Image src="/logo.jpg" alt="Logo" fluid className="logo-image" />
         </Col>
-        <Col md={4} className="side-details">
-          <h1> Lorenzo D'Auria</h1>
+        <Col md={6} className="col-details">
+          <Row md={11}>
+            <h1 style={{ marginTop: "8%" }}>Lorenzo D'Auria</h1>
+            <p>
+              Welcome to my personal website, here you can find some information
+              about me and the projects I am most proud of.
+            </p>
+          </Row>
+          <Row md={1}>
+            <Col md={6}>
+              <Button
+                href="https://github.com/lodauria"
+                className="social-button"
+              >
+                GitHub
+              </Button>
+            </Col>
+            <Col md={6}>
+              <Button
+                href="https://www.linkedin.com/in/lorenzodauria/"
+                className="social-button"
+              >
+                LinkedIn
+              </Button>
+            </Col>
+          </Row>
         </Col>
-        <Col md={2}></Col>
       </Row>
-      <Row md={9}>
+      <Row md={9} style={{ marginBottom: "5%" }}>
         <h1>About me</h1>
         <p>
           I am Lorenzo D’Auria, born in Trieste (Italy) in 1997. At the end of
