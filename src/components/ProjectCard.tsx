@@ -1,6 +1,5 @@
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
@@ -8,21 +7,25 @@ interface Props {
   date: string;
   image: string;
   postName: string;
+  handler: any;
 }
 
-function ProjectCard({ title, description, date, image, postName }: Props) {
+function ProjectCard(props: Props) {
   return (
     <Card className="project-card">
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.description}</Card.Text>
         <Card.Text>
-          <i>[{date}]</i>
+          <i>[{props.date}]</i>
         </Card.Text>
-        <Link to={postName}>
-          <Button className="button-card">Details</Button>
-        </Link>
+        <Button
+          className="button-card"
+          onClick={() => props.handler(props.postName)}
+        >
+          Details
+        </Button>
       </Card.Body>
     </Card>
   );
