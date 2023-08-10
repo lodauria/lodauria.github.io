@@ -4,41 +4,49 @@ import { Col, Container, Row } from "react-bootstrap";
 function ProjectsPage() {
   return (
     <Container>
-      <Row md={4}>
-        <Col md={4}>
+      <Row xs={1} md={3} className="g-4" style={{ marginTop: "2rem" }}>
+        <Col key={1}>
           <ProjectCard
             title="Internet of Things individual project"
+            description="description"
             date="July 2021"
+            image=""
             postName="IoT_Individual_Project"
           />
         </Col>
-        <Col md={4}>
+        <Col key={2}>
           <ProjectCard
             title="Internet of Things group project"
+            description="description"
             date="July 2021"
+            image=""
             postName="IoT_Group_Project"
           />
         </Col>
-        <Col md={4}>
+        <Col key={3}>
           <ProjectCard
             title="Interactive Graphics group project"
+            description="description"
             date="July 2020"
+            image=""
             postName="IG_Project_Robohand"
           />
         </Col>
-      </Row>
-      <Row md={4}>
-        <Col md={4}>
+        <Col key={4}>
           <ProjectCard
             title="Audio Speed Up Android app"
+            description="description"
             date="April 2020"
+            image=""
             postName="AudioSpeedUp"
           />
         </Col>
-        <Col md={4}>
+        <Col key={5}>
           <ProjectCard
             title="Lego car controlled with IR"
+            description="description"
             date="March 2018"
+            image=""
             postName="IRCar_Lego_Arduino"
           />
         </Col>

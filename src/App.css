@@ -56,7 +56,6 @@ body {
   background-color:#ffffff7a;
 }
 
-
 /* Homepage */
 
 .row-header{
@@ -91,9 +90,18 @@ body {
 .social-button{
   width: 100%;
   color: #fff;
-  background-color: #007bff; /* Colore del bottone */
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Project page */
+
+.project-card{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
 }

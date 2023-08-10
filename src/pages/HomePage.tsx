@@ -1,5 +1,18 @@
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 
+interface SocialButtonProps {
+  href: string;
+  text: string;
+}
+
+function SocialButton({ href, text }: SocialButtonProps) {
+  return (
+    <Button href={href} className="social-button">
+      {text}
+    </Button>
+  );
+}
+
 function HomePage() {
   return (
     <Container>
@@ -9,7 +22,7 @@ function HomePage() {
         </Col>
         <Col md={6} className="col-details">
           <Row md={11}>
-            <h1 style={{ marginTop: "8%" }}>Lorenzo D'Auria</h1>
+            <h1 style={{ marginTop: "1rem" }}>Lorenzo D'Auria</h1>
             <p>
               Welcome to my personal website, here you can find some information
               about me and the projects I am most proud of.
@@ -17,20 +30,13 @@ function HomePage() {
           </Row>
           <Row md={1}>
             <Col md={6}>
-              <Button
-                href="https://github.com/lodauria"
-                className="social-button"
-              >
-                GitHub
-              </Button>
+              <SocialButton href="https://github.com/lodauria" text="GitHub" />
             </Col>
             <Col md={6}>
-              <Button
-                href="https://www.linkedin.com/in/lorenzodauria/"
-                className="social-button"
-              >
-                LinkedIn
-              </Button>
+              <SocialButton
+                href="https://www.linkedin.com/in/lorenzodauria"
+                text="LinkedIn"
+              />
             </Col>
           </Row>
         </Col>
