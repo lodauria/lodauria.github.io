@@ -123,7 +123,12 @@ body {
   height: 75%;
   background-color: #fdfdfb;
   overflow-y: scroll;
-  display: flex;
-  justify-content: space-between;
   padding: 2rem;
+}
+
+.close-button{
+  position: fixed;
+  margin: 2rem;
+  top: 12%;
+  left: 80%;
 }
