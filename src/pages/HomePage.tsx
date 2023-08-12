@@ -16,19 +16,24 @@ function SocialButton({ href, text }: SocialButtonProps) {
 function HomePage() {
   return (
     <Container>
-      <Row md={3} className="row-header">
-        <Col md={6} className="col-image d-flex align-items-center">
-          <Image src="/logo.jpg" alt="Logo" fluid className="logo-image" />
+      <Row md={3} className="row-header d-flex align-items-center">
+        <Col md={5} className="col-image d-flex align-items-center">
+          <Image
+            src="/profile_pic.jpg"
+            alt="profile picture"
+            fluid
+            className="profile-image"
+          />
         </Col>
-        <Col md={6} className="col-details">
-          <Row md={11}>
+        <Col md={5} className="col-details">
+          <Row>
             <h1 style={{ marginTop: "1rem" }}>Lorenzo D'Auria</h1>
             <p>
               Welcome to my personal website, here you can find some information
               about me and the projects I am most proud of.
             </p>
           </Row>
-          <Row md={1}>
+          <Row>
             <Col md={6}>
               <SocialButton href="https://github.com/lodauria" text="GitHub" />
             </Col>

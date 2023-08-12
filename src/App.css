@@ -22,6 +22,13 @@ body {
   background-color: #35ad2e;
   justify-content: space-between;
   align-items: center;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.top-navbar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .nav-ul{
@@ -33,6 +40,12 @@ body {
 .nav-ul-header{
   padding-right: 1.7rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-ul-header{
+    display: none;
+  }
 }
 
 .nav-li{
@@ -59,29 +72,26 @@ body {
 /* Homepage */
 
 .row-header{
+  background: linear-gradient(to bottom, rgb(68, 236, 68), #FDFDFB);
   margin-left: calc((100vw - 100%) / -2) !important;
   padding-left: calc((100vw - 100%) / 2);
   margin-right: calc((100vw - 100%) / -2) !important;
   padding-right: calc((100vw - 100%) / 2);
-  background: linear-gradient(to bottom, rgb(68, 236, 68), #FDFDFB); 
+  justify-content: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .col-image{
-  margin-top: 2rem;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
 .col-details{
-  padding-right: 20%;
-  margin-top: 2rem;
-  justify-content: center;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.logo-image {
-  width: 40%;
+.profile-image {
+  width: 50%;
   height: auto;
   border: #333 solid;
   border-radius: 50%;
