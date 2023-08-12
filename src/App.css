@@ -93,18 +93,23 @@ body {
 .profile-image {
   width: 50%;
   height: auto;
-  border: #333 solid;
+  border: #333 solid 0.2rem;
   border-radius: 50%;
 }
 
+.button-container{
+  justify-content: center;
+}
+
 .social-button{
-  width: 100%;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.social-button span{
+  padding-left: 8px;
 }
 
 /* Project page */

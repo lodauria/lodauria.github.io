@@ -1,4 +1,5 @@
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
+import { SocialIcon } from "react-social-icons";
 
 interface SocialButtonProps {
   href: string;
@@ -7,9 +8,10 @@ interface SocialButtonProps {
 
 function SocialButton({ href, text }: SocialButtonProps) {
   return (
-    <Button href={href} className="social-button">
-      {text}
-    </Button>
+    <div className="social-button">
+      <SocialIcon url={href} />
+      <span>{text}</span>
+    </div>
   );
 }
 
@@ -33,11 +35,11 @@ function HomePage() {
               about me and the projects I am most proud of.
             </p>
           </Row>
-          <Row>
-            <Col md={6}>
+          <Row className="button-container">
+            <Col md={4}>
               <SocialButton href="https://github.com/lodauria" text="GitHub" />
             </Col>
-            <Col md={6}>
+            <Col md={4}>
               <SocialButton
                 href="https://www.linkedin.com/in/lorenzodauria"
                 text="LinkedIn"
