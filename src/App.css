@@ -1,15 +1,22 @@
 /* General */
 
+:root {
+  --text-black: #333;
+  --bg-white: #fdfdfb;
+  --main-green: #35ad2e;
+  --light-green: #44ec44;
+}
+
 body {
   margin: 0;
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #fdfdfb;
+  background-color: var(--bg-white);
 }
 
 .App {
-  color: #333;
+  color: var(--text-black);
   font-family: Helvetica, sans-serif;
 }
 
@@ -44,7 +51,7 @@ body {
   padding: 0;
   display: flex;
   font-size: 1.5rem;
-  background-color: #35ad2e;
+  background-color: var(--main-green);
   justify-content: space-between;
   align-items: center;
   overflow-x: scroll;
@@ -97,7 +104,7 @@ body {
 /* Homepage */
 
 .row-header{
-  background: linear-gradient(to bottom, rgb(68, 236, 68), #FDFDFB);
+  background: linear-gradient(to bottom, var(--light-green), var(--bg-white));
   margin-left: calc((100vw - 100%) / -2) !important;
   padding-left: calc((100vw - 100%) / 2);
   margin-right: calc((100vw - 100%) / -2) !important;
@@ -118,7 +125,7 @@ body {
 .profile-image {
   width: 50%;
   height: auto;
-  border: #333 solid 0.2rem;
+  border: var(--text-black) solid 0.2rem;
   border-radius: 50%;
 }
 
@@ -129,10 +136,49 @@ body {
 /* Project page */
 
 .project-card{
+  background-color: #44ec44;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 1rem;
+  margin: 2%;
+}
+
+.image-card{
+  margin: 2.5%;
+  width: 95%
+}
+
+.button-card {
+  width: 60%;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,#1212121a 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-card:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 
 /* Project popup*/
@@ -142,13 +188,13 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #00000080;
 }
 
 .popup-container{
   width: 90%;
   height: 80%;
-  background-color: #fdfdfb;
+  background-color: var(--bg-white);
   overflow-y: scroll;
   padding: 4%;
   margin-inline: 5%;
@@ -162,6 +208,7 @@ body {
 }
 
 .post-container h1{
+  color: var(--main-green);
   font-weight: bold;
 }
 

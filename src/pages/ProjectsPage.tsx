@@ -36,60 +36,50 @@ function ProjectsPage() {
   const wrapperSetParentState = useCallback(
     (postName: string) => {
       setProjPopup(postName);
-      document.body.style.overflow = postName === "" ? "unset" : "hidden";
+      document.body.style.overflowY = postName === "" ? "unset" : "hidden";
     },
     [setProjPopup]
   );
 
   return (
     <Container>
-      <Row xs={1} md={3} className="g-4" style={{ marginTop: "2rem" }}>
+      <Row xs={1} md={3} className="g-4" style={{ marginTop: "1rem" }}>
         <Col key={1}>
           <ProjectCard
-            title="Internet of Things individual project"
-            description="description"
+            title="Internet of Things Individual Project"
             date="July 2021"
-            image=""
             postName="IoT_Individual_Project"
             handler={wrapperSetParentState}
           />
         </Col>
         <Col key={2}>
           <ProjectCard
-            title="Internet of Things group project"
-            description="description"
+            title="Internet of Things Group Project"
             date="July 2021"
-            image=""
             postName="IoT_Group_Project"
             handler={wrapperSetParentState}
           />
         </Col>
         <Col key={3}>
           <ProjectCard
-            title="Interactive Graphics group project"
-            description="description"
+            title="Interactive Graphics Group Project"
             date="July 2020"
-            image=""
             postName="IG_Project_Robohand"
             handler={wrapperSetParentState}
           />
         </Col>
         <Col key={4}>
           <ProjectCard
-            title="Audio Speed Up Android app"
-            description="description"
+            title="Audio Speed Up Android App"
             date="April 2020"
-            image=""
             postName="AudioSpeedUp"
             handler={wrapperSetParentState}
           />
         </Col>
         <Col key={5}>
           <ProjectCard
-            title="Lego car controlled with IR"
-            description="description"
+            title="Lego Car Controlled with IR"
             date="March 2018"
-            image=""
             postName="IRCar_Lego_Arduino"
             handler={wrapperSetParentState}
           />

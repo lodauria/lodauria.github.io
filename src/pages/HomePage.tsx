@@ -7,7 +7,7 @@ function HomePage() {
       <Row md={3} className="row-header d-flex align-items-center">
         <Col md={5} className="col-image d-flex align-items-center">
           <Image
-            src="/profile_pic.jpg"
+            src="img/profile_pic.jpg"
             alt="Profile picture"
             fluid
             className="profile-image"

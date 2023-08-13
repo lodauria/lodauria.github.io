@@ -1,31 +1,31 @@
-import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 interface Props {
   title: string;
-  description: string;
   date: string;
-  image: string;
+  image?: string;
   postName: string;
   handler: any;
 }
 
-function ProjectCard(props: Props) {
+function ProjectCard({
+  title,
+  date,
+  image = "img/proj-default.jpg",
+  postName,
+  handler,
+}: Props) {
   return (
     <Card className="project-card">
-      <Card.Img variant="top" src={props.image} />
+      <Card.Img variant="top" className="image-card" src={image} />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.description}</Card.Text>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
-          <i>[{props.date}]</i>
+          <i>[{date}]</i>
         </Card.Text>
-        <Button
-          className="button-card"
-          onClick={() => props.handler(props.postName)}
-        >
-          Details
-        </Button>
+        <button className="button-card" onClick={() => handler(postName)}>
+          Show
+        </button>
       </Card.Body>
     </Card>
   );
