@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import CloseButton from "react-bootstrap/CloseButton";
 import SelectPost from "../pages/AllPosts";
 
@@ -20,10 +19,10 @@ function ProjectPopup({ trigger, handler }: ProjectPopupProps) {
         }
       }}
     >
-      <div>
-        <CloseButton className="close-button" onClick={() => handler("")} />
+      <div className="popup-container">
+        <CloseButton onClick={() => handler("")} />
+        {SelectPost(trigger)}
       </div>
-      <Container className="popup-container">{SelectPost(trigger)}</Container>
     </div>
   );
 }

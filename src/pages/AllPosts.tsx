@@ -1,8 +1,8 @@
 /* IoT Individual Project Post*/
 function IoTInd() {
   return (
-    <>
-      <h1 id="post-title">Internet of Things Individual Project</h1>
+    <div className="post-container">
+      <h1>Internet of Things Individual Project</h1>
       <p>Completed in July 2021</p>
 
       <a href="https://github.com/lodauria/IoT_Individual_Project">
@@ -35,15 +35,15 @@ function IoTInd() {
         Even if the system was quite small, the simple prototype worked as
         expected.
       </p>
-    </>
+    </div>
   );
 }
 
 /*  IoT Group Project Post*/
 function IoTGroup() {
   return (
-    <>
-      <h1 id="post-title">Internet of Things Group Project</h1>
+    <div className="post-container">
+      <h1>Internet of Things Group Project</h1>
       <p>Completed in July 2021</p>
 
       <a href="https://github.com/lodauria/IoT_Group_Project">View on GitHub</a>
@@ -78,14 +78,14 @@ function IoTGroup() {
         amazing results considering that it was developed from scratch by three
         people.
       </p>
-    </>
+    </div>
   );
 }
 
 /* Robohand Post*/
 function Robohand() {
   return (
-    <>
+    <div className="post-container">
       <h1>Interactive Graphics group project</h1>
       <p>Developed in July 2020</p>
 
@@ -126,14 +126,14 @@ function Robohand() {
         src="https://github.com/lodauria/IG_Project_Robohand/raw/main/webpage_screen.png"
         alt="not found"
       ></img>
-    </>
+    </div>
   );
 }
 
 /* AudioSpeedUp Post*/
 function AudioSpeedUp() {
   return (
-    <>
+    <div className="post-container">
       <h1>Audio Speed Up Android app</h1>
       <p>Developed in April 2020</p>
 
@@ -182,15 +182,15 @@ function AudioSpeedUp() {
         width="30%"
         alt="not found"
       />
-    </>
+    </div>
   );
 }
 
 /* IRCar Post*/
 function IRCar() {
   return (
-    <>
-      <h1 id="post-title">Lego car controlled with IR</h1>
+    <div className="post-container">
+      <h1>Lego car controlled with IR</h1>
       <p>Developed in March 2018</p>
 
       <a href="https://github.com/lodauria/IRCar_Lego_Arduino">
@@ -233,16 +233,16 @@ function IRCar() {
         src="https://github.com/lodauria/IRCar_Lego_Arduino/raw/master/image.jpg"
         alt="not found"
       ></img>
-    </>
+    </div>
   );
 }
 
 /* Post not found message*/
 function NotFound() {
   return (
-    <>
+    <div className="post-container">
       <h3>The post selected does not exist</h3>
-    </>
+    </div>
   );
 }
 

@@ -9,6 +9,7 @@ function ProjectsPage() {
   const wrapperSetParentState = useCallback(
     (postName: string) => {
       setProjPopup(postName);
+      document.body.style.overflow = postName === "" ? "unset" : "hidden";
     },
     [setProjPopup]
   );
