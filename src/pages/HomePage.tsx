@@ -1,19 +1,5 @@
-import { Col, Container, Row, Image, Button } from "react-bootstrap";
-import { SocialIcon } from "react-social-icons";
-
-interface SocialButtonProps {
-  href: string;
-  text: string;
-}
-
-function SocialButton({ href, text }: SocialButtonProps) {
-  return (
-    <div className="social-button">
-      <SocialIcon url={href} />
-      <span>{text}</span>
-    </div>
-  );
-}
+import { Col, Container, Row, Image } from "react-bootstrap";
+import ExtLinkButton from "../components/ExtLinkButton";
 
 function HomePage() {
   return (
@@ -22,7 +8,7 @@ function HomePage() {
         <Col md={5} className="col-image d-flex align-items-center">
           <Image
             src="/profile_pic.jpg"
-            alt="profile picture"
+            alt="Profile picture"
             fluid
             className="profile-image"
           />
@@ -36,13 +22,20 @@ function HomePage() {
             </p>
           </Row>
           <Row className="button-container">
-            <Col md={4}>
-              <SocialButton href="https://github.com/lodauria" text="GitHub" />
+            <Col md="auto">
+              <ExtLinkButton
+                href="https://github.com/lodauria"
+                text="GitHub"
+                social="github"
+                align="center"
+              />
             </Col>
-            <Col md={4}>
-              <SocialButton
+            <Col md="auto">
+              <ExtLinkButton
                 href="https://www.linkedin.com/in/lorenzodauria"
                 text="LinkedIn"
+                social="linkedin"
+                align="center"
               />
             </Col>
           </Row>

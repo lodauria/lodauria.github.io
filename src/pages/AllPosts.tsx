@@ -1,40 +1,57 @@
+import { Col, Container, Row, Image } from "react-bootstrap";
+import ExtLinkButton from "../components/ExtLinkButton";
+
 /* IoT Individual Project Post*/
 function IoTInd() {
   return (
     <div className="post-container">
-      <h1>Internet of Things Individual Project</h1>
-      <p>Completed in July 2021</p>
+      <Container>
+        <h1>Internet of Things Individual Project</h1>
+        <i>Completed in July 2021</i>
 
-      <a href="https://github.com/lodauria/IoT_Individual_Project">
-        View on GitHub
-      </a>
-      <a href="https://youtu.be/HOkv7nlomJc">YouTube video demo</a>
+        <Row className="post-links">
+          <Col md="auto" xs={12}>
+            <ExtLinkButton
+              href="https://github.com/lodauria/IoT_Individual_Project"
+              text="View on GitHub"
+              social="github"
+            />
+          </Col>
+          <Col md="auto" xs={12}>
+            <ExtLinkButton
+              href="https://youtu.be/HOkv7nlomJc"
+              text="YouTube demo"
+              social="youtube"
+            />
+          </Col>
+        </Row>
 
-      <h2>Description</h2>
+        <h3>Description</h3>
 
-      <p>
-        During the Internet of Things course I have realized as individual
-        assignment a complete IoT system.
-      </p>
+        <p>
+          During the Internet of Things course I have realized as individual
+          assignment a complete IoT system.
+        </p>
 
-      <p>
-        The IoT system developed is based on the idea of making university rooms
-        smarter. By monitoring the light condition and time at which the rooms
-        projectors are used is possible to automatically adjust the curtains and
-        the lights so to reduce energy waste and provide students the best
-        possible rooms conditions.
-      </p>
+        <p>
+          The IoT system developed is based on the idea of making university
+          rooms smarter. By monitoring the light condition and time at which the
+          rooms projectors are used is possible to automatically adjust the
+          curtains and the lights so to reduce energy waste and provide students
+          the best possible rooms conditions.
+        </p>
 
-      <p>
-        The device software has been developed using RIOT-OS and C++ scripts,
-        while the cloud components were developed using Python scripts
-        integrated in AWS Cloud.
-      </p>
+        <p>
+          The device software has been developed using RIOT-OS and C++ scripts,
+          while the cloud components were developed using Python scripts
+          integrated in AWS Cloud.
+        </p>
 
-      <p>
-        Even if the system was quite small, the simple prototype worked as
-        expected.
-      </p>
+        <p>
+          Even if the system was quite small, the simple prototype worked as
+          expected.
+        </p>
+      </Container>
     </div>
   );
 }
@@ -44,12 +61,26 @@ function IoTGroup() {
   return (
     <div className="post-container">
       <h1>Internet of Things Group Project</h1>
-      <p>Completed in July 2021</p>
+      <i>Completed in July 2021</i>
 
-      <a href="https://github.com/lodauria/IoT_Group_Project">View on GitHub</a>
-      <a href="https://youtu.be/_4xa47vLS9I">YouTube video demo</a>
+      <Row className="post-links">
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://github.com/lodauria/IoT_Group_Project"
+            text="View on GitHub"
+            social="github"
+          />
+        </Col>
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://youtu.be/_4xa47vLS9I"
+            text="YouTube demo"
+            social="youtube"
+          />
+        </Col>
+      </Row>
 
-      <h2>Description</h2>
+      <h3>Description</h3>
 
       <p>
         As final evaluation for the Internet of Things course we were divided in
@@ -86,17 +117,27 @@ function IoTGroup() {
 function Robohand() {
   return (
     <div className="post-container">
-      <h1>Interactive Graphics group project</h1>
-      <p>Developed in July 2020</p>
+      <h1>Interactive Graphics Group Project</h1>
+      <i>Completed in July 2020</i>
 
-      <a href="https://github.com/lodauria/IG_Project_Robohand">
-        View on GitHub
-      </a>
-      <a href="https://lodauria.github.io/IG_Project_Robohand/robohand.html">
-        Demo web page
-      </a>
+      <Row className="post-links">
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://github.com/lodauria/IG_Project_Robohand"
+            text="View on GitHub"
+            social="github"
+          />
+        </Col>
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://lodauria.github.io/IG_Project_Robohand/robohand.html"
+            text="Demo web page"
+            social="github"
+          />
+        </Col>
+      </Row>
 
-      <h2>Description</h2>
+      <h3>Description</h3>
 
       <p>
         As final project for the Interactive Graphics course we were asked to
@@ -122,10 +163,14 @@ function Robohand() {
         the requirements.
       </p>
 
-      <img
-        src="https://github.com/lodauria/IG_Project_Robohand/raw/main/webpage_screen.png"
-        alt="not found"
-      ></img>
+      <Row style={{ justifyContent: "center" }}>
+        <Image
+          src="https://github.com/lodauria/IG_Project_Robohand/raw/main/webpage_screen.png"
+          alt="Robohand demo"
+          fluid
+          className="post-image"
+        />
+      </Row>
     </div>
   );
 }
@@ -134,12 +179,20 @@ function Robohand() {
 function AudioSpeedUp() {
   return (
     <div className="post-container">
-      <h1>Audio Speed Up Android app</h1>
-      <p>Developed in April 2020</p>
+      <h1>Audio Speed Up Android App</h1>
+      <i>Developed from April 2020</i>
 
-      <a href="https://github.com/lodauria/AudioSpeedUp">View on GitHub</a>
+      <Row className="post-links">
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://github.com/lodauria/AudioSpeedUp"
+            text="View on GitHub"
+            social="github"
+          />
+        </Col>
+      </Row>
 
-      <h2>Description</h2>
+      <h3>Description</h3>
 
       <p>
         During 2020 lockdown I have decided to develop a simple Android app
@@ -167,21 +220,44 @@ function AudioSpeedUp() {
         experience.
       </p>
 
-      <img
-        src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen1.png"
-        width="30%"
-        alt="not found"
-      />
-      <img
-        src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen2.png"
-        width="30%"
-        alt="not found"
-      />
-      <img
-        src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen3.png"
-        width="30%"
-        alt="not found"
-      />
+      <Row style={{ justifyContent: "center" }}>
+        <Col
+          md="auto"
+          xs={12}
+          style={{ justifyContent: "center", display: "flex" }}
+        >
+          <Image
+            src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen1.png"
+            alt="App screenshot 1"
+            fluid
+            className="post-image"
+          />
+        </Col>
+        <Col
+          md="auto"
+          xs={12}
+          style={{ justifyContent: "center", display: "flex" }}
+        >
+          <Image
+            src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen2.png"
+            alt="App screenshot 2"
+            fluid
+            className="post-image"
+          />
+        </Col>
+        <Col
+          md="auto"
+          xs={12}
+          style={{ justifyContent: "center", display: "flex" }}
+        >
+          <Image
+            src="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/screen3.png"
+            alt="App screenshot 3"
+            fluid
+            className="post-image"
+          />
+        </Col>
+      </Row>
     </div>
   );
 }
@@ -190,15 +266,27 @@ function AudioSpeedUp() {
 function IRCar() {
   return (
     <div className="post-container">
-      <h1>Lego car controlled with IR</h1>
-      <p>Developed in March 2018</p>
+      <h1>Lego Car Controlled with IR</h1>
+      <i>Completed in March 2018</i>
 
-      <a href="https://github.com/lodauria/IRCar_Lego_Arduino">
-        View on GitHub
-      </a>
-      <a href="https://youtu.be/qfQm9lA7alI">YouTube tutorial</a>
+      <Row className="post-links">
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://github.com/lodauria/IRCar_Lego_Arduino"
+            text="View on GitHub"
+            social="github"
+          />
+        </Col>
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://youtu.be/qfQm9lA7alI"
+            text="YouTube tutorial"
+            social="youtube"
+          />
+        </Col>
+      </Row>
 
-      <h2>Description</h2>
+      <h3>Description</h3>
 
       <p>
         As optional project for the Reti Logiche course we were asked to create
@@ -229,10 +317,14 @@ function IRCar() {
         others to build their own IR-controlled Lego car.
       </p>
 
-      <img
-        src="https://github.com/lodauria/IRCar_Lego_Arduino/raw/master/image.jpg"
-        alt="not found"
-      ></img>
+      <Row style={{ justifyContent: "center" }}>
+        <Image
+          src="https://github.com/lodauria/IRCar_Lego_Arduino/raw/master/image.jpg"
+          alt="IR Lego car"
+          fluid
+          className="post-image"
+        />
+      </Row>
     </div>
   );
 }
