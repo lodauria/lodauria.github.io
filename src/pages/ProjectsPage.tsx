@@ -49,6 +49,7 @@ function ProjectsPage() {
             title="Internet of Things Individual Project"
             date="July 2021"
             postName="IoT_Individual_Project"
+            image="https://raw.githubusercontent.com/lodauria/IoT_Individual_Project/main/src/wiring.jpg"
             handler={wrapperSetParentState}
           />
         </Col>
@@ -57,6 +58,7 @@ function ProjectsPage() {
             title="Internet of Things Group Project"
             date="July 2021"
             postName="IoT_Group_Project"
+            image="https://raw.githubusercontent.com/lodauria/IoT_Group_Project/main/resources/images/MarinaMonitorPositionExample.png"
             handler={wrapperSetParentState}
           />
         </Col>
@@ -65,6 +67,7 @@ function ProjectsPage() {
             title="Interactive Graphics Group Project"
             date="July 2020"
             postName="IG_Project_Robohand"
+            image="https://github.com/lodauria/IG_Project_Robohand/raw/main/webpage_screen.png"
             handler={wrapperSetParentState}
           />
         </Col>
@@ -73,6 +76,7 @@ function ProjectsPage() {
             title="Audio Speed Up Android App"
             date="April 2020"
             postName="AudioSpeedUp"
+            image="https://github.com/lodauria/AudioSpeedUp/raw/master/PlayStore/banner.png"
             handler={wrapperSetParentState}
           />
         </Col>
@@ -81,6 +85,7 @@ function ProjectsPage() {
             title="Lego Car Controlled with IR"
             date="March 2018"
             postName="IRCar_Lego_Arduino"
+            image="https://github.com/lodauria/IRCar_Lego_Arduino/raw/master/image.jpg"
             handler={wrapperSetParentState}
           />
         </Col>

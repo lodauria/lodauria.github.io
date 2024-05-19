@@ -57,7 +57,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   padding: 0;
   display: flex;
   font-size: 1.5rem;
@@ -155,7 +155,9 @@ body {
 
 .image-card{
   margin: 2.5%;
-  width: 95%
+  width: 95%;
+  height: 12rem;
+  object-fit: cover;
 }
 
 .button-card {
@@ -198,6 +200,7 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
+  z-index: 1000;
   background-color: #00000080;
 }
 
