@@ -94,7 +94,7 @@ function ProjectsPage() {
             title="React-based personal website"
             date="August 2023"
             postName="PersonalWebsite"
-            image="https://github.com/lodauria/lodauria.github.io/raw/master/screenshot.jpg"
+            image="https://raw.githubusercontent.com/lodauria/lodauria.github.io/main/screenshot.png"
             handler={wrapperSetParentState}
           />
         </Col>

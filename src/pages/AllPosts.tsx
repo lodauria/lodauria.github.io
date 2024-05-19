@@ -334,7 +334,7 @@ function PersonalWebsite() {
   return (
     <div className="post-container">
       <h1>React-based personal website</h1>
-      <i>Created in August 2023</i>
+      <i>Developed from August 2023</i>
 
       <Row className="post-links">
         <Col md="auto" xs={12}>
@@ -350,15 +350,17 @@ function PersonalWebsite() {
 
       <p>
         The main goal of this project was to gain more experience in building
-        react-based websites. I have developed my personal website (the one you
-        are visiting now) to present myself to companies and other developers
-        with a portfolio of my most relevant projects.
+        react-based websites. In particular I decided to developed my personal
+        website, the one you are visiting now, to present myself to companies
+        and other developers with a portfolio of my most relevant projects.
       </p>
 
       <p>
         Whenever I have some time and new projects to share, I try to update
-        this website making it in constant development and nicer after evry
-        commit, or at least this is the idea.
+        this website making it nicer and richer after evry commit, or at least
+        this is the idea. I always try to follow all the best practice and keep
+        the website modular and well organized even if the contents are very
+        simple.
       </p>
     </div>
   );
