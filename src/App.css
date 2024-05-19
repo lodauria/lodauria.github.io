@@ -45,9 +45,19 @@ body {
   text-decoration: none;
 }
 
+.container{
+  margin-top: 3rem;
+  margin-bottom: 5%;
+}
+
 /* Navigation bar */
 
 .top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 0;
   display: flex;
   font-size: 1.5rem;

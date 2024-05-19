@@ -41,7 +41,7 @@ function HomePage() {
           </Row>
         </Col>
       </Row>
-      <Row md={9} style={{ marginBottom: "5%" }}>
+      <Row md={9}>
         <h1>About me</h1>
         <p>
           I am Lorenzo D’Auria, born in Trieste (Italy) in 1997. At the end of
@@ -76,6 +76,33 @@ function HomePage() {
           shipyard efficiency and security. I mainly work with Python, C++, ROS,
           Azure, Git and Unix in general.
         </p>
+      </Row>
+      <Row md={9}>
+        <h3 style={{ marginTop: "1rem" }}>Other sources</h3>
+        <Col md="auto">
+          <ExtLinkButton
+            href="pdf/LD-tesi-triennale.pdf"
+            text="Bachelor thesis"
+            social="github"
+            align="left"
+          />
+        </Col>
+        <Col md="auto">
+          <ExtLinkButton
+            href="pdf/LD-tesi-magistrale.pdf"
+            text="Master thesis"
+            social="github"
+            align="left"
+          />
+        </Col>
+        <Col md="auto">
+          <ExtLinkButton
+            href="pdf/LD-CV-Eng.pdf"
+            text="Curriculum vitae"
+            social="github"
+            align="left"
+          />
+        </Col>
       </Row>
     </Container>
   );
