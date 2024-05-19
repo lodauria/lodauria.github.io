@@ -329,6 +329,41 @@ function IRCar() {
   );
 }
 
+/* Personal website Post*/
+function PersonalWebsite() {
+  return (
+    <div className="post-container">
+      <h1>React-based personal website</h1>
+      <i>Created in August 2023</i>
+
+      <Row className="post-links">
+        <Col md="auto" xs={12}>
+          <ExtLinkButton
+            href="https://github.com/lodauria/lodauria.github.io"
+            text="View on GitHub"
+            social="github"
+          />
+        </Col>
+      </Row>
+
+      <h3>Description</h3>
+
+      <p>
+        The main goal of this project was to gain more experience in building
+        react-based websites. I have developed my personal website (the one you
+        are visiting now) to present myself to companies and other developers
+        with a portfolio of my most relevant projects.
+      </p>
+
+      <p>
+        Whenever I have some time and new projects to share, I try to update
+        this website making it in constant development and nicer after evry
+        commit, or at least this is the idea.
+      </p>
+    </div>
+  );
+}
+
 /* Post not found message*/
 function NotFound() {
   return (
@@ -361,6 +396,10 @@ function SelectPost(postName: string) {
 
     case "IRCar_Lego_Arduino":
       Post = IRCar;
+      break;
+
+    case "PersonalWebsite":
+      Post = PersonalWebsite;
       break;
 
     default:

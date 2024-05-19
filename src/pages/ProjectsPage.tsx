@@ -89,6 +89,15 @@ function ProjectsPage() {
             handler={wrapperSetParentState}
           />
         </Col>
+        <Col key={6}>
+          <ProjectCard
+            title="React-based personal website"
+            date="August 2023"
+            postName="PersonalWebsite"
+            image="https://github.com/lodauria/lodauria.github.io/raw/master/screenshot.jpg"
+            handler={wrapperSetParentState}
+          />
+        </Col>
       </Row>
       <ProjectPopup trigger={projPopup} handler={wrapperSetParentState} />
     </Container>
